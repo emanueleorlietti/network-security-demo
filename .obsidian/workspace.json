@@ -1,0 +1,454 @@
+{
+  "main": {
+    "id": "5324373015726ba8",
+    "type": "split",
+    "children": [
+      {
+        "id": "c7390be027936f98",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "bd46d9d622583d56",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Templates/concept-template.md",
+                "mode": "preview",
+                "source": true,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "concept-template"
+            }
+          },
+          {
+            "id": "ad1cd48b18cbdfa3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Templates/script-template.md",
+                "mode": "source",
+                "source": true,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "script-template"
+            }
+          },
+          {
+            "id": "a380e558c02fd4e4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Templates/concept-template.md",
+                "mode": "source",
+                "source": true,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "concept-template"
+            }
+          },
+          {
+            "id": "5941dff38e4392f7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Concepts/OSI Model.md",
+                "mode": "preview",
+                "source": true,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "OSI Model"
+            }
+          },
+          {
+            "id": "1c3e1d48fbde1def",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Concepts/TCP-IP Model.md",
+                "mode": "preview",
+                "source": true,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "TCP-IP Model"
+            }
+          },
+          {
+            "id": "a09d647b67103ee6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Concepts/IP Addressing.md",
+                "mode": "preview",
+                "source": true,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "IP Addressing"
+            }
+          },
+          {
+            "id": "8828967725415fca",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Concepts/TCP and UDP.md",
+                "mode": "preview",
+                "source": true,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "TCP and UDP"
+            }
+          },
+          {
+            "id": "8afb6bafa413aab3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Concepts/DNS.md",
+                "mode": "preview",
+                "source": true,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "DNS"
+            }
+          },
+          {
+            "id": "8b16d80a6ad9925e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Commands/ip.md",
+                "mode": "preview",
+                "source": true,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "ip"
+            }
+          },
+          {
+            "id": "1a0e82215de6851b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Commands/ping.md",
+                "mode": "preview",
+                "source": true,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "ping"
+            }
+          },
+          {
+            "id": "550c37db7a090eb6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Commands/dig.md",
+                "mode": "preview",
+                "source": true,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "dig"
+            }
+          },
+          {
+            "id": "1f9255765206b252",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Commands/ipconfig.md",
+                "mode": "preview",
+                "source": true,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "ipconfig"
+            }
+          },
+          {
+            "id": "130a060e08989497",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Commands/Test-NetConnection.md",
+                "mode": "preview",
+                "source": true,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "Test-NetConnection"
+            }
+          },
+          {
+            "id": "f3ec8ba667ea34f5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Guides/Network Connectivity Troubleshooting.md",
+                "mode": "preview",
+                "source": true,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "Network Connectivity Troubleshooting"
+            }
+          },
+          {
+            "id": "ef8d1d00f08ce94c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Scripts/network-diagnostics.md",
+                "mode": "preview",
+                "source": true,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "network-diagnostics"
+            }
+          },
+          {
+            "id": "56cac809a7f24588",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "preview",
+                "source": true,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "README"
+            }
+          }
+        ],
+        "currentTab": 15
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "a75426c5e908822b",
+    "type": "split",
+    "children": [
+      {
+        "id": "53e656b71ba4b057",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "834270ad6dd91660",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Esplora file"
+            }
+          },
+          {
+            "id": "1ac241cf3361f07f",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Ricerca"
+            }
+          },
+          {
+            "id": "e84bec492b852755",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 348.5
+  },
+  "right": {
+    "id": "3a5faf5c49059af5",
+    "type": "split",
+    "children": [
+      {
+        "id": "664ed128fd00fe5e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "26957839ca1d01a5",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Index/Dashboard.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Dashboard"
+            }
+          },
+          {
+            "id": "5c56617631aa4e41",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": false,
+                "showSearch": true,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Etichette"
+            }
+          },
+          {
+            "id": "10627f0619aa3290",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Index/Dashboard.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Dashboard"
+            }
+          },
+          {
+            "id": "9bc1e2212b297a51",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Commands/Expert/Identity Awareness.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Identity Awareness"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 302.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Apri selettore rapido": false,
+      "daily-notes:Apri nota giornaliera": false,
+      "graph:Apri vista grafo": false,
+      "canvas:Crea nuova lavagna": false,
+      "templates:Inserisci modello": false,
+      "command-palette:Apri riquadro comandi": false,
+      "workspaces:Gestisci layout delle aree di lavoro": false,
+      "bases:Crea nuova Base": false,
+      "quickadd:QuickAdd": false,
+      "templater-obsidian:Templater": false
+    }
+  },
+  "active": "56cac809a7f24588",
+  "lastOpenFiles": [
+    "Index/Command Index.md",
+    "Index/Troubleshooting Index.md",
+    "Index/Script Index.md",
+    "Scripts/network-diagnostics.md",
+    "Index/Guide Index.md",
+    "Index/Concept Index.md",
+    "Dashboard.md",
+    "Troubleshooting/DNS Resolution Failure.md",
+    "Guides/Network Connectivity Troubleshooting.md",
+    "Commands/Test-NetConnection.md",
+    "Commands/ipconfig.md",
+    "Commands/dig.md",
+    "Commands/ping.md",
+    "Commands/ip.md",
+    "Concepts/DNS.md",
+    "Concepts/TCP and UDP.md",
+    "Concepts/IP Addressing.md",
+    "Concepts/TCP-IP Model.md",
+    "Concepts/OSI Model.md",
+    "Templates/concept-template.md",
+    "Templates/windows-command-template.md",
+    "Templates/troubleshooting-template.md",
+    "Templates/script-template.md",
+    "Templates/linux-command-template.md",
+    "Templates/guide-template.md",
+    "Troubleshooting/aaa.md",
+    "Troubleshooting",
+    "Templates",
+    "Scripts",
+    "Index",
+    "Guides",
+    "Concepts",
+    "Commands",
+    "Attachments",
+    "Knowledge Base.base",
+    "Attachments/Pasted image 20250909094932.png",
+    "Attachments/serial-console-access-putty.png",
+    "Attachments/ldap-mobile-access-unknown-user.png",
+    "Tickets/7943",
+    "Attachments/vpn-default-cert-renewal.png",
+    "Attachments/vpn-dedicated-cert.png",
+    "Attachments/vpn-certificate-expiry-warning-smartconsole.png",
+    "Attachments/vpn-certificate-expired-details.png",
+    "Attachments/ssl-certificate-outbound-bypass.png",
+    "Attachments/ssl-certificate-inbound-services.png",
+    "Attachments/log-exporter-filter-config.png",
+    "Untitled.canvas"
+  ]
+}

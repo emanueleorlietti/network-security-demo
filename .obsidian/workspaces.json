@@ -1,0 +1,201 @@
+{
+  "workspaces": {
+    "startup": {
+      "main": {
+        "id": "5324373015726ba8",
+        "type": "split",
+        "children": [
+          {
+            "id": "62218af0a1fe2fc4",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "f4b5233a078ce06b",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Dashboard.md",
+                    "mode": "source",
+                    "source": true,
+                    "backlinks": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Dashboard"
+                }
+              }
+            ]
+          },
+          {
+            "id": "71ee60f758829cc7",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "51945a583301f7dc",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "graph",
+                  "state": {},
+                  "pinned": true,
+                  "icon": "lucide-git-fork",
+                  "title": "Graph view"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "vertical"
+      },
+      "left": {
+        "id": "a75426c5e908822b",
+        "type": "split",
+        "children": [
+          {
+            "id": "53e656b71ba4b057",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "834270ad6dd91660",
+                "type": "leaf",
+                "state": {
+                  "type": "file-explorer",
+                  "state": {
+                    "sortOrder": "alphabetical",
+                    "autoReveal": false
+                  },
+                  "icon": "lucide-folder-closed",
+                  "title": "Files"
+                }
+              },
+              {
+                "id": "1ac241cf3361f07f",
+                "type": "leaf",
+                "state": {
+                  "type": "search",
+                  "state": {
+                    "query": "",
+                    "matchingCase": false,
+                    "explainSearch": false,
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical"
+                  },
+                  "icon": "lucide-search",
+                  "title": "Search"
+                }
+              },
+              {
+                "id": "e84bec492b852755",
+                "type": "leaf",
+                "state": {
+                  "type": "bookmarks",
+                  "state": {},
+                  "icon": "lucide-bookmark",
+                  "title": "Bookmarks"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal",
+        "width": 271.5
+      },
+      "right": {
+        "id": "3a5faf5c49059af5",
+        "type": "split",
+        "children": [
+          {
+            "id": "664ed128fd00fe5e",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "441a7b20d6c5cf93",
+                "type": "leaf",
+                "state": {
+                  "type": "backlink",
+                  "state": {
+                    "file": "Index/Dashboard.md",
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical",
+                    "showSearch": false,
+                    "searchQuery": "",
+                    "backlinkCollapsed": false,
+                    "unlinkedCollapsed": true
+                  },
+                  "icon": "links-coming-in",
+                  "title": "Backlinks for Dashboard"
+                }
+              },
+              {
+                "id": "26957839ca1d01a5",
+                "type": "leaf",
+                "state": {
+                  "type": "outgoing-link",
+                  "state": {
+                    "file": "Index/Dashboard.md",
+                    "linksCollapsed": false,
+                    "unlinkedCollapsed": true
+                  },
+                  "icon": "links-going-out",
+                  "title": "Outgoing links from Dashboard"
+                }
+              },
+              {
+                "id": "5c56617631aa4e41",
+                "type": "leaf",
+                "state": {
+                  "type": "tag",
+                  "state": {
+                    "sortOrder": "frequency",
+                    "useHierarchy": true,
+                    "showSearch": false,
+                    "searchQuery": ""
+                  },
+                  "icon": "lucide-tags",
+                  "title": "Tags"
+                }
+              },
+              {
+                "id": "10627f0619aa3290",
+                "type": "leaf",
+                "state": {
+                  "type": "outline",
+                  "state": {
+                    "file": "Index/Dashboard.md",
+                    "followCursor": false,
+                    "showSearch": false,
+                    "searchQuery": ""
+                  },
+                  "icon": "lucide-list",
+                  "title": "Outline of Dashboard"
+                }
+              }
+            ],
+            "currentTab": 2
+          }
+        ],
+        "direction": "horizontal",
+        "width": 300
+      },
+      "left-ribbon": {
+        "hiddenItems": {
+          "quickadd:QuickAdd": false,
+          "switcher:Open quick switcher": false,
+          "graph:Open graph view": false,
+          "canvas:Create new canvas": false,
+          "daily-notes:Open today's daily note": false,
+          "templates:Insert template": false,
+          "command-palette:Open command palette": false,
+          "templater-obsidian:Templater": false,
+          "workspaces:Manage workspace layouts": false,
+          "juggl:Juggl global graph": false
+        }
+      },
+      "active": "f4b5233a078ce06b",
+      "mtime": "2025-07-14T12:13:38+02:00"
+    }
+  },
+  "active": "startup"
+}
