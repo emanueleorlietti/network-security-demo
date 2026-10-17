@@ -1,4 +1,4 @@
-Technical cases organized around symptoms, investigation, root cause, resolution and verification.
+Technical cases organized around symptoms, context, investigation, verified root cause, resolution and validation.
 
 Each case connects diagnostic evidence with the commands, concepts and procedures used to interpret it.
 

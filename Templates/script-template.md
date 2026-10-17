@@ -1,31 +1,41 @@
 ---
-Script: <% tp.file.title %>
-Description: "<Insert a brief description of the script>"
-Language: "<Bash, PowerShell, Python, etc.>"
+Script: <% JSON.stringify(tp.file.title) %>
+Description: ""
+Language: ""
 tags:
   - script
 ---
 
-# 🧩 Description
+## Purpose and scope
 
-Explain what the script does and when to use it.
+<!-- State inputs, outputs, intended use and limits; distinguish evidence collection from automatic diagnosis. -->
 
-# ⚙️ Script Content
+## Requirements
 
-```text
-# Paste the script here
-```
+<!-- Record OS/runtime versions, dependencies, optional tools and minimum privileges. -->
 
-# ▶️ Usage
+## Script content
 
 ```text
-# Add an execution example
+# Replace with reviewed source and use the matching language fence.
 ```
 
-# 🔒 Requirements
+## Usage and parameters
 
-- 
+<!-- Document every argument, default, validation rule and example. Do not derive executable filenames from note titles. -->
 
-# 💡 Notes
+## Results and exit status
 
-- 
+<!-- Document exit codes, timeouts, skipped checks and partial failures. Collection completion does not imply healthy services. -->
+
+## Impact and cleanup
+
+<!-- Describe network requests and state changes, output paths/overwrite behavior, sensitive data, bounds, interruption handling and cleanup/rollback. -->
+
+## Validation
+
+<!-- Record syntax checks separately from execution tests. Include failure paths and exact runtime/environment; mark untested behavior. -->
+
+## Related notes and references
+
+<!-- Link existing notes and authoritative API/tool documentation. -->

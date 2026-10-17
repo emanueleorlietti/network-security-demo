@@ -1,7 +1,7 @@
 ---
-Script: network-diagnostics
+Script: "network-diagnostics"
 Description: "Collects Linux network state and performs bounded ICMP and name-resolution checks without changing configuration."
-Language: Bash
+Language: "Bash"
 tags:
   - script
   - linux
@@ -328,3 +328,9 @@ Related notes:
 - [[DNS]]
 - [[Network Connectivity Troubleshooting]]
 - [[DNS Resolution Failure]]
+
+## Exit status and validation boundary
+
+The script exits with status 2 for rejected arguments and status 1 when a required tool is missing. Individual checks report errors/timeouts and continue; an overall zero exit status means collection reached the end, not that every check passed. Optional tools may be skipped. Stop with Ctrl+C. The script writes to standard output/error; a report file is created only by the caller's redirection and may overwrite an existing file. Review reports for hostnames, addresses, resolver/search domains and listening ports before sharing.
+
+The IPv4 target is validated; an optional IPv6 resolver literal is checked only superficially and then interpreted by dig. This is not a full IPv6 resolver-address validator.

@@ -1,7 +1,7 @@
 ---
-Case: DNS Resolution Failure
+Case: "DNS Resolution Failure"
 Description: "A simulated lab case where an incorrect client DNS setting prevents access to an internal HTTPS service."
-Status: Resolved
+Status: "Simulated - resolved"
 Date: 2026-10-12
 tags:
   - troubleshooting

@@ -1,7 +1,7 @@
 ---
-Command: ipconfig
+Command: "ipconfig"
 Description: "Displays Windows IP configuration and provides DHCP lease and DNS cache operations."
-OS: Windows
+OS: "Windows"
 tags:
   - command
   - windows
@@ -10,6 +10,10 @@ tags:
   - dns
   - troubleshooting
 ---
+
+## Execution context and impact
+
+Windows, from PowerShell or Command Prompt. Inspection and state-changing examples are separated below. Before a lease operation, identify the exact adapter, preserve configuration and ensure recovery access; a successful renewal is not guaranteed and the previous lease cannot be assumed recoverable.
 
 # 🛠️ Command
 

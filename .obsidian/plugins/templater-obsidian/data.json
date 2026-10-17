@@ -15,28 +15,20 @@
   "enable_folder_templates": true,
   "folder_templates": [
     {
-      "folder": "Commands/Clish",
-      "template": "Templates/cli-topic-template.md"
-    },
-    {
       "folder": "Concepts",
       "template": "Templates/concept-template.md"
     },
     {
-      "folder": "Commands/Expert",
-      "template": "Templates/exp-topic-template.md"
+      "folder": "Guides",
+      "template": "Templates/guide-template.md"
     },
     {
       "folder": "Scripts",
       "template": "Templates/script-template.md"
     },
     {
-      "folder": "SKs",
-      "template": "Templates/sk-template.md"
-    },
-    {
-      "folder": "Tickets",
-      "template": "Templates/ticket-template.md"
+      "folder": "Troubleshooting",
+      "template": "Templates/troubleshooting-template.md"
     }
   ],
   "enable_file_templates": false,

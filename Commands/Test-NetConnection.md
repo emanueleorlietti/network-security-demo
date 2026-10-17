@@ -1,7 +1,7 @@
 ---
-Command: Test-NetConnection
+Command: "Test-NetConnection"
 Description: "Tests Windows network connectivity through ICMP probes, TCP connection attempts and route diagnostics."
-OS: Windows
+OS: "Windows"
 tags:
   - command
   - windows
@@ -9,6 +9,10 @@ tags:
   - tcp
   - troubleshooting
 ---
+
+## Execution context and impact
+
+Windows with the NetTCPIP module. Check availability using `Get-Command Test-NetConnection`. Tests generate network traffic; do not run repeated probes without a bound. Parameter sets and selected destination address determine what is actually tested.
 
 # 🛠️ Command
 

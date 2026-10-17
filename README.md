@@ -1,235 +1,111 @@
 # Network & Security Demo
 
-A vendor-neutral Obsidian knowledge base for organizing networking, cybersecurity, systems, and troubleshooting documentation.
+A public, vendor-neutral Obsidian knowledge base demonstrating reusable technical documentation: commands, networking concepts, guides, diagnostic scripts and evidence-based troubleshooting cases.
 
-This repository is a demonstration of the structure and methodology behind my personal technical knowledge base. It is designed as a reusable starting point rather than a complete technical encyclopedia.
+The current examples focus on Linux/Windows networking and DNS. This is a small, connected demonstration of a documentation method, not a complete security reference or an account of production incidents.
 
----
-
-## 🧠 Project Purpose
-
-Technical notes often become scattered across documents, bookmarks, tickets, and temporary files.
-
-This vault provides a structured system for:
-
-- Documenting frequently used commands
-- Explaining technical concepts
-- Creating reusable technical guides
-- Recording troubleshooting cases
-- Storing diagnostic and automation scripts
-- Connecting related information through tags and internal links
-
-The goal is to transform technical notes into a searchable and reusable **second brain**.
-
----
-
-## 📂 Vault Structure
-
-- `Attachments` — Images and supporting files
-- `Commands`
-  - `Linux` — Linux commands and utilities
-  - `Windows` — Windows and PowerShell commands
-- `Concepts` — Networking, security, and system concepts
-- `Guides` — Reusable technical procedures
-- `Index` — Navigation pages grouped by category
-- `Scripts` — Diagnostic and automation scripts
-- `Templates` — Templates for creating consistent notes
-- `Troubleshooting` — Problems, investigations, root causes, and resolutions
-
----
-
-## 🚀 Getting Started
-
-Clone the repository:
+## Start here
 
 ```bash
 git clone https://github.com/emanueleorlietti/network-security-demo.git
 ```
 
-Open Obsidian and select:
+Open the cloned folder as an Obsidian vault, then open **Dashboard.md**. On GitHub, use the links below; Obsidian wikilinks in note bodies are intended for the vault.
 
-```text
-Open folder as vault
+- [Dashboard](Dashboard.md)
+- [Command Index](Index/Command%20Index.md)
+- [Concept Index](Index/Concept%20Index.md)
+- [Guide Index](Index/Guide%20Index.md)
+- [Script Index](Index/Script%20Index.md)
+- [Troubleshooting Index](Index/Troubleshooting%20Index.md)
+
+## Actual vault structure
+
+| Folder | Contents |
+| --- | --- |
+| Commands/ | Eight notes, including Linux, Windows and cross-platform tools; OS metadata controls the index tables. No platform subfolders are required. |
+| Concepts/ | Five fundamentals: OSI, TCP/IP, IP addressing, TCP/UDP and DNS. |
+| Guides/ | A connectivity procedure with prerequisites, validation and rollback considerations. |
+| Scripts/ | A documented Bash collector with per-check timeouts and partial-failure reporting. |
+| Troubleshooting/ | A simulated DNS failure, evidence sequence, correction and expected validation. |
+| Templates/ | Six templates for the QuickAdd workflows below. |
+| Index/ | Five category indexes with static links and Dataview tables. |
+
+Attachments/ is the configured destination for future attachments; it is not populated in this repository.
+
+## Note creation and plugins
+
+The repository includes Dataview, QuickAdd and Templater configuration and plugin files. Enable community plugins only after reviewing and trusting their code. The core notes and static navigation remain readable without them. Dynamic tables require Dataview; QuickAdd and Templater provide the creation workflow.
+
+| QuickAdd action | Folder | Template |
+| --- | --- | --- |
+| New Linux command | Commands | linux-command-template.md |
+| New Windows command | Commands | windows-command-template.md |
+| New concept | Concepts | concept-template.md |
+| New guide | Guides | guide-template.md |
+| New script | Scripts | script-template.md |
+| New troubleshooting case | Troubleshooting | troubleshooting-template.md |
+
+All templates are in Templates/. QuickAdd action IDs and destinations are preserved. Both command types share Commands/, so Templater deliberately has no automatic command-folder default: choose the correct QuickAdd action or insert the matching Templater template manually. Automatic folder templates cover Concepts, Guides, Scripts and Troubleshooting. Do not use Obsidian's core Templates insertion for Templater expressions.
+
+## Documentation standards
+
+- Preserve property names Command, Concept, Guide, Script, Case, Description, OS, Language, Difficulty, Status and Date where applicable. Template titles are JSON-quoted for valid YAML punctuation.
+- Use lowercase, consistent tags: command, concept, guide, script and troubleshooting identify note categories. Platform/topic tags connect notes across categories. Reuse existing tags; choose singular forms where natural.
+- OS values Linux, Windows and Linux / Windows drive command indexes. Use both platform tags for a shared tool.
+- Explain syntax placeholders before execution. Use bash, powershell or text fences as appropriate; keep illustrative output separate from input.
+- Document platform/tool versions, target/interface, privileges, impact and interpretation limits. Bound active diagnostics and explain cleanup.
+- New cases start Under investigation. Record symptoms, context, observations and hypotheses; state a root cause only when evidence verifies it. Record actions actually performed and validate the original user workflow before marking a real case Resolved.
+- Label lab cases, example outputs and expected results explicitly. The DNS case is Simulated - resolved; that status is part of the fictional scenario.
+- Link actual notes, such as DNS, dig and DNS Resolution Failure. All current notes have unique filenames; use folder-qualified links if duplicate names are introduced.
+
+## Lab scope and validation
+
+Private addresses in the connected examples belong to a fictional 192.168.10.32/27 lab. Names under demo.test require local lab DNS. They are not live public targets. Public example domains and probe addresses are separate examples; adapt them to authorized destinations.
+
+The HTTPS lab requires a configured service and a certificate trusted by the client for portal.demo.test. A DNS override does not disable certificate checks. A successful ping, TCP handshake or script completion does not by itself prove a healthy application.
+
+The maintenance pass checked note metadata, links, template rendering cases, workflow mappings and shell/PowerShell syntax separately from runtime behavior. No live Linux/Windows lab or production service was exercised. Source references are attached to the relevant notes; syntax checks do not prove operational success.
+
+## Public-repository hygiene
+
+Use fictional roles and documentation values. Never publish credentials, tokens, private keys, customer identities, real organizational topology, full production configurations or raw diagnostic captures. Collector output may contain hostnames, IPs, search domains and listening sockets: redact it before sharing. Changes to current files do not remove content from earlier Git history.
+
+## Git synchronization
+
+Run from your checkout and confirm the remote repository before pulling:
+
+```bash
+git remote -v
+git status
+git pull --ff-only origin main
 ```
 
-Then choose the cloned `network-security-demo` folder.
-
----
-
-## 🔌 Community Plugins
-
-The vault uses the following Obsidian community plugins:
-
-- **Dataview** — Creates dynamic indexes and views
-- **QuickAdd** — Creates notes using predefined actions
-- **Templater** — Applies templates and dynamic properties
-
-If the plugins are not already installed:
-
-1. Open **Settings**
-2. Go to **Community plugins**
-3. Disable Restricted Mode
-4. Install and enable the required plugins
-
----
+Commit or stash local edits before pulling if they conflict. Reapply a stash deliberately and resolve conflicts; do not discard local work just to synchronize.
 
 ## 🟣 Basic Git Commands
 
-1. `git status` — Shows modified, staged, and untracked files
-2. `git add .` — Stages all modified and new files
-3. `git commit -m "YYYYMMDD-XX"` — Creates a snapshot with a descriptive message
-4. `git push` — Uploads local commits to the remote repository
-5. `git pull` — Downloads and integrates remote changes
-
----
+| Command | Purpose |
+| --- | --- |
+| `git status` | Inspect the branch and staged, unstaged and untracked changes. |
+| `git add .` | Stage additions, modifications and deletions below the current directory. Use explicit paths when selecting files. |
+| `git diff --cached` | Review the exact staged content before committing. |
+| `git commit -m "YYYYMMDD-XX"` | Record the staged snapshot; use a meaningful message. |
+| `git push` | Upload commits to the configured upstream. |
+| `git pull --ff-only origin main` | Retrieve main and update only when a fast-forward is possible. |
 
 ## 🔵 Useful Obsidian Shortcuts
 
-1. `CTRL + E` — Toggle Edit and Preview mode
-2. `CTRL + G` — Open Graph View
-3. `CTRL/CMD + O` — Search and open notes
-4. `CTRL/CMD + P` — Open the Command Palette
-5. `CTRL + R` — Run QuickAdd
+| Shortcut | Action |
+| --- | --- |
+| Ctrl/Cmd+E | Toggle editing and reading view. |
+| Ctrl/Cmd+G | Open Graph View. |
+| Ctrl/Cmd+O | Open Quick Switcher. |
+| Ctrl/Cmd+P | Open Command Palette. |
+| Ctrl/Cmd+R | Run QuickAdd (configured in this vault). |
 
-QuickAdd can be used to create:
+Other shortcuts can be customized. Ctrl is typical on Windows/Linux and Cmd on macOS. Use Local Graph to explore related notes; zoom affects label visibility.
 
-- Commands
-- Concepts
-- Guides
-- Scripts
-- Troubleshooting notes
+## Feedback
 
----
-
-## 🏷️ Tagging Best Practices
-
-To keep the vault clean, searchable, and consistent, follow these rules.
-
-### Format Rules
-
-- Use **lowercase only**
-  - `#networking` ✅
-  - `#Networking` ❌
-- Use the **singular form**
-  - `#command` ✅
-  - `#commands` ❌
-- Do not use spaces
-  - `#network-security` ✅
-  - `#network security` ❌
-- Use hyphens for multi-word tags
-- Avoid abbreviations unless they are widely recognized
-  - `#dns`, `#vpn`, `#nat`, and `#tcp` are acceptable
-- Reuse existing tags instead of creating similar alternatives
-
-### Examples
-
-| Good Tag | Bad Tag | Reason |
-|---|---|---|
-| `#networking` | `#Networking` | Uppercase creates inconsistencies |
-| `#command` | `#commands` | Singular form is preferred |
-| `#network-security` | `#network security` | Tags cannot contain spaces |
-| `#troubleshooting` | `#troubleshoot` | Use one consistent form |
-
----
-
-## 🛠️ Managing Tags
-
-- Use the **Tag Pane** in the Obsidian sidebar to review existing tags
-- Use **Rename tag** to correct inconsistent tags
-- Remember that tags are case-sensitive
-- Use tags to connect notes across different folders
-
-For example, `#dns` can appear in:
-
-- Commands such as `dig` or `Resolve-DnsName`
-- Concepts such as DNS resolution
-- Guides about DNS analysis
-- Troubleshooting cases involving name resolution failures
-
-Folders define where a note belongs. Tags describe what the note is about.
-
----
-
-## 🧱 Code Block Standards
-
-Use the appropriate code block language to improve readability.
-
-### Linux and Shell Commands
-
-```bash
-ping -c 4 8.8.8.8
-dig example.com
-tcpdump -ni any port 53
-```
-
-### Windows and PowerShell Commands
-
-```powershell
-Test-NetConnection example.com -Port 443
-Resolve-DnsName example.com
-Get-NetTCPConnection
-```
-
-### Plain Output
-
-```text
-PING 8.8.8.8: 56 data bytes
-64 bytes from 8.8.8.8: time=15 ms
-```
-
-Use inline code for commands, parameters, file paths, ports, and short output values.
-
-Examples:
-
-- Run `ping` to test basic reachability
-- DNS commonly uses port `53`
-- Linux logs are commonly stored under `/var/log/`
-- Windows system files are stored under `C:\Windows\System32\`
-
----
-
-## 🔗 Internal Linking
-
-Use Obsidian links to connect related information:
-
-```text
-[[DNS Resolution]]
-[[dig]]
-[[DNS Resolution Failure]]
-```
-
-A troubleshooting note should link to the commands and concepts used during the investigation.
-
-This creates connections between:
-
-- Theory
-- Diagnostic tools
-- Procedures
-- Real troubleshooting scenarios
-
----
-
-## 🧠 Local Graph Tip
-
-If linked notes do not show their names in the Local Graph:
-
-- Zoom in using the mouse wheel or trackpad
-- Confirm that you opened the **Local Graph**, not the global Graph View
-
-The labels may be hidden when the graph is zoomed out.
-
----
-
-## ⚠️ Disclaimer
-
-This repository is intended for educational and documentation purposes.
-
-Always review commands and procedures before using them in production environments. Examples may require adaptation based on the operating system, permissions, network topology, and security policies.
-
----
-
-## 🤝 Contributions and Feedback
-
-Suggestions, corrections, and improvements are welcome.
-
-You can open a GitHub Issue or submit a Pull Request if you want to contribute to the project.
+Corrections and focused contributions are welcome through GitHub Issues or pull requests. Keep examples reproducible, distinguish expected results from observed evidence and preserve the vendor-neutral scope.

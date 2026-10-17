@@ -1,7 +1,7 @@
 ---
-Command: dig
+Command: "dig"
 Description: "Queries DNS servers and displays records, response status and diagnostic information."
-OS: Linux
+OS: "Linux"
 tags:
   - command
   - linux
@@ -9,6 +9,10 @@ tags:
   - dns
   - troubleshooting
 ---
+
+## Execution context and impact
+
+Linux with BIND utilities. Confirm the installed version with `dig -v`. Queries generate traffic and may populate caches; no configuration change is intended. Check the actual DNS response code, not only the process exit status.
 
 # 🛠️ Command
 

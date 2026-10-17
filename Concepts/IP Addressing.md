@@ -1,5 +1,5 @@
 ---
-Concept: IP Addressing
+Concept: "IP Addressing"
 Description: "How IPv4 and IPv6 addresses identify network interfaces and support routing between networks."
 tags:
   - concept
@@ -232,3 +232,7 @@ References:
 - [RFC 4291 — IPv6 Addressing Architecture](https://www.rfc-editor.org/rfc/rfc4291.html)
 - [RFC 5737 — IPv4 Address Blocks Reserved for Documentation](https://www.rfc-editor.org/rfc/rfc5737.html)
 - [RFC 3849 — IPv6 Address Prefix Reserved for Documentation](https://www.rfc-editor.org/rfc/rfc3849.html)
+
+## Documentation scope
+
+Protocol explanations and examples are educational. Validate platform-specific behavior against the actual implementation. Use [[Network Connectivity Troubleshooting]] to record observations separately from hypotheses, and never treat a model or sample output as a verified root cause.

@@ -1,7 +1,7 @@
 ---
-Guide: Network Connectivity Troubleshooting
+Guide: "Network Connectivity Troubleshooting"
 Description: "A structured procedure for separating local network, routing, DNS, transport and application failures."
-Difficulty: Intermediate
+Difficulty: "Intermediate"
 tags:
   - guide
   - networking
@@ -30,7 +30,7 @@ The goal is to collect evidence before changing configuration and identify the s
 - Linux tools: `ip`, `ping`, `dig` and `curl`.
 - Windows tools: `ipconfig`, `Test-NetConnection`, `Resolve-DnsName` and `curl.exe`.
 
-The additional tools are used directly in this guide; they do not require separate command notes.
+See [[Resolve-DnsName]], [[curl]] and [[ss]] for additional tool context. All lab results below are expected outcomes, not measurements collected from your systems.
 
 ## Example Lab
 

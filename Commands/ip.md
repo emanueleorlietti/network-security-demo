@@ -1,7 +1,7 @@
 ---
-Command: ip
+Command: "ip"
 Description: "Inspects and manages Linux network interfaces, IP addresses, routes and neighbor entries."
-OS: Linux
+OS: "Linux"
 tags:
   - command
   - linux
@@ -9,6 +9,10 @@ tags:
   - ip
   - troubleshooting
 ---
+
+## Execution context and impact
+
+Linux with iproute2; inspect the current network namespace and relevant interface. The examples below inspect state. The syntax summary is notation, not a runnable test. Stop `ip monitor` with Ctrl+C; no network configuration rollback is needed for these inspection examples.
 
 # 🛠️ Command
 

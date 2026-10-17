@@ -9,7 +9,7 @@ TABLE WITHOUT ID
     file.link AS "Command",
     Description AS "Description"
 FROM "Commands"
-WHERE contains(tags, "command") AND OS = "Linux"
+WHERE contains(tags, "command") AND (OS = "Linux" OR OS = "Linux / Windows")
 SORT file.name ASC
 ```
 
@@ -20,7 +20,7 @@ TABLE WITHOUT ID
     file.link AS "Command",
     Description AS "Description"
 FROM "Commands"
-WHERE contains(tags, "command") AND OS = "Windows"
+WHERE contains(tags, "command") AND (OS = "Windows" OR OS = "Linux / Windows")
 SORT file.name ASC
 ```
 
@@ -31,10 +31,17 @@ SORT file.name ASC
 | Inspect IP configuration | [[ip]] | [[ipconfig]] |
 | Inspect route selection | [[ip]] | [[Test-NetConnection]] |
 | Test ICMP reachability | [[ping]] | [[Test-NetConnection]] |
-| Investigate DNS responses | [[dig]] | See the Windows DNS steps in the guide |
-| Test a TCP port | See the application checks in the guide | [[Test-NetConnection]] |
+| Investigate DNS responses | [[dig]] | [[Resolve-DnsName]] |
+| Inspect HTTP/TLS behavior | [[curl]] | [[curl]] (use curl.exe) |
+| Test a TCP port without testing the application | Use an appropriate TCP diagnostic tool | [[Test-NetConnection]] |
 
 For a complete diagnostic sequence, follow [[Network Connectivity Troubleshooting]].
+
+## Additional tools
+
+- [[ss]] — local Linux sockets and listeners.
+- [[curl]] — bounded HTTP/TLS diagnostics on Linux and Windows.
+- [[Resolve-DnsName]] — explicit Windows DNS queries.
 
 ## 💡 Usage Notes
 

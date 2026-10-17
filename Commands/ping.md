@@ -1,7 +1,7 @@
 ---
-Command: ping
+Command: "ping"
 Description: "Tests IP reachability and measures round-trip time using ICMP Echo requests on Linux."
-OS: Linux
+OS: "Linux"
 tags:
   - command
   - linux
@@ -9,6 +9,10 @@ tags:
   - icmp
   - troubleshooting
 ---
+
+## Execution context and impact
+
+Linux iputils syntax; confirm installed options with `ping -h`. These are active ICMP probes to authorized targets. Use the count/deadline examples for bounded tests; results depend on policy and address-family selection.
 
 # 🛠️ Command
 

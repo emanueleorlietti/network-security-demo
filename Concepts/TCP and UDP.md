@@ -1,5 +1,5 @@
 ---
-Concept: TCP and UDP
+Concept: "TCP and UDP"
 Description: "A comparison of TCP and UDP transport behavior, common use cases and troubleshooting considerations."
 tags:
   - concept
@@ -169,3 +169,7 @@ References:
 - [RFC 8085 — UDP Usage Guidelines](https://www.rfc-editor.org/rfc/rfc8085.html)
 - [RFC 7766 — DNS Transport over TCP](https://www.rfc-editor.org/rfc/rfc7766.html)
 - [IANA — Service Name and Transport Protocol Port Number Registry](https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml)
+
+## Documentation scope
+
+Protocol explanations and examples are educational. Validate platform-specific behavior against the actual implementation. Use [[Network Connectivity Troubleshooting]] to record observations separately from hypotheses, and never treat a model or sample output as a verified root cause.

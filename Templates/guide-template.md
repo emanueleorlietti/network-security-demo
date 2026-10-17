@@ -1,59 +1,39 @@
 ---
-Guide: <% tp.file.title %>
-Description: "<Insert a brief description of the guide>"
-Difficulty: "<Beginner, Intermediate or Advanced>"
+Guide: <% JSON.stringify(tp.file.title) %>
+Description: ""
+Difficulty: ""
 tags:
   - guide
 ---
 
-# 🎯 Objective
+## Objective and scope
 
-Describe what the reader will accomplish by following this guide.
+<!-- Define the starting problem, expected outcome and exclusions. State whether this is a simulated lab or a verified procedure. -->
 
-# 📋 Prerequisites
+## Prerequisites
 
-- 
-- 
+<!-- Record platform/tool versions, permissions, target values, required services, recovery access and an acceptable change window where relevant. -->
 
-# 🛠️ Procedure
+## Procedure
 
-## 1. First Step
+<!-- Number the steps. For each, state purpose, command/action, expected evidence and the next decision. Use the correct code fence and explain all placeholders. -->
 
-Explain the first step.
+## Verification
 
-```text
-Add commands or configuration examples here
-```
+<!-- Validate the original workflow plus relevant dependencies. Record actual result/time when performed; distinguish expected results from observations. -->
 
-## 2. Second Step
+## Rollback and cleanup
 
-Explain the second step.
+<!-- For each state change, record the original value, persistence, rollback method and post-rollback checks. For diagnostic-only steps, explain residual logs/cache/files and cleanup. -->
 
-```text
-Add commands or configuration examples here
-```
+## Troubleshooting
 
-# ✅ Verification
+<!-- List symptom, possible explanations and discriminating tests. Do not present an unverified cause as a diagnosis. -->
 
-Explain how to verify that the procedure was completed successfully.
+## Related notes
 
-```text
-Add verification commands or expected output here
-```
+<!-- Link existing commands, concepts, scripts and cases. -->
 
-# ↩️ Rollback
+## References and validation status
 
-Describe how to safely undo the changes, if applicable.
-
-# ⚠️ Troubleshooting
-
-- **Problem:**  
-  **Solution:**
-
-# 🔗 Related Notes
-
-- [[]]
-
-# 📚 References
-
-- 
+<!-- Use authoritative documentation; record reviewed date and tested platform, or state that the procedure has not been executed. -->

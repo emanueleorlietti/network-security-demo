@@ -1,5 +1,5 @@
 ---
-Concept: DNS
+Concept: "DNS"
 Description: "How the Domain Name System resolves names, distributes records and supports network services."
 tags:
   - concept
@@ -179,3 +179,7 @@ References:
 - [RFC 2308 — Negative Caching of DNS Queries](https://www.rfc-editor.org/rfc/rfc2308.html)
 - [RFC 7766 — DNS Transport over TCP](https://www.rfc-editor.org/rfc/rfc7766.html)
 - [RFC 4033 — DNS Security Introduction and Requirements](https://www.rfc-editor.org/rfc/rfc4033.html)
+
+## Documentation scope
+
+Protocol explanations and examples are educational. Validate platform-specific behavior against the actual implementation. Use [[Network Connectivity Troubleshooting]] to record observations separately from hypotheses, and never treat a model or sample output as a verified root cause.

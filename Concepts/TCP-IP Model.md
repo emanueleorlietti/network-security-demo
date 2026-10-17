@@ -1,5 +1,5 @@
 ---
-Concept: TCP-IP Model
+Concept: "TCP-IP Model"
 Description: "The four-layer model used to describe communication across IP networks and the Internet."
 tags:
   - concept
@@ -135,3 +135,7 @@ Use TCP/IP to explain how actual protocol exchanges work, and OSI to discuss the
 When troubleshooting, distinguish name resolution, IP reachability, transport connectivity and application behavior.
 
 Reference: [RFC 1122 — Requirements for Internet Hosts: Communication Layers](https://www.rfc-editor.org/rfc/rfc1122.html).
+
+## Documentation scope
+
+Protocol explanations and examples are educational. Validate platform-specific behavior against the actual implementation. Use [[Network Connectivity Troubleshooting]] to record observations separately from hypotheses, and never treat a model or sample output as a verified root cause.

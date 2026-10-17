@@ -1,5 +1,5 @@
 ---
-Concept: OSI Model
+Concept: "OSI Model"
 Description: "A seven-layer reference model for understanding network communication and organizing troubleshooting."
 tags:
   - concept
@@ -114,3 +114,7 @@ See [[Network Connectivity Troubleshooting]] for the complete procedure and [[DN
 Use the OSI model as a diagnostic checklist. Record what each check establishes, what remains uncertain and which test should follow.
 
 Reference: [ITU-T X.200 — OSI Basic Reference Model](https://www.itu.int/rec/T-REC-X.200/en/).
+
+## Documentation scope
+
+Protocol explanations and examples are educational. Validate platform-specific behavior against the actual implementation. Use [[Network Connectivity Troubleshooting]] to record observations separately from hypotheses, and never treat a model or sample output as a verified root cause.

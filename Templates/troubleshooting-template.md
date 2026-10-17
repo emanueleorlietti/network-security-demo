@@ -1,74 +1,48 @@
 ---
-Case: <% tp.file.title %>
-Description: "<Insert a brief description of the problem>"
-Status: Resolved
+Case: <% JSON.stringify(tp.file.title) %>
+Description: ""
+Status: "Under investigation"
 Date: <% tp.date.now("YYYY-MM-DD") %>
 tags:
   - troubleshooting
 ---
 
-# 🚨 Problem
+## Problem and impact
 
-Describe the reported problem and its impact.
+<!-- Describe the reported failure, affected users/services and expected behavior. Mark simulated cases explicitly. -->
 
-# 🩺 Symptoms
+## Symptoms
 
-- 
-- 
+<!-- Record observable symptoms and timing/timezone; separate reports from reproduced observations. -->
 
-# 🖥️ Environment
+## Environment and context
 
-- **Operating System:**
-- **Device or Platform:**
-- **Network Area:**
-- **Relevant Configuration:**
+<!-- Use sanitized platform/tool versions, topology roles, source/destination, interface, VRF/namespace, protocol/port and recent changes. -->
 
-# 🔍 Investigation
+## Investigation
 
-## 1. Initial Checks
+<!-- Keep a timeline: question, hypothesis, test, redacted observation and next decision. Preserve baseline evidence. Expected or simulated output is not observed evidence. -->
 
-Describe the first diagnostic checks.
+## Root cause
 
-```text
-Add diagnostic commands or output here
-```
+<!-- Use Unknown until verified. State the evidence linking cause to symptoms; retain competing explanations and unperformed tests where unresolved. -->
 
-## 2. Additional Analysis
+## Resolution or workaround
 
-Describe the additional troubleshooting performed.
+<!-- Record only actions actually performed, with scope, change reference, impact and persistence. Mark proposals as not performed. -->
 
-```text
-Add diagnostic commands or output here
-```
+## Validation
 
-# 🎯 Root Cause
+<!-- Record actual before/after results and time, retest the original workflow and relevant dependencies, and state remaining limitations. Do not mark Resolved before validation. -->
 
-Explain the identified root cause.
+## Rollback and cleanup
 
-# 🛠️ Resolution
+<!-- Record protected baseline, specific recovery steps, temporary changes and cleanup; validate after rollback. -->
 
-Describe the steps used to resolve the problem.
+## Prevention and follow-up
 
-```text
-Add commands or configuration changes here
-```
+<!-- Assign practical follow-up actions when applicable; distinguish recommendations from completed work. -->
 
-# ✅ Verification
+## Related notes and references
 
-Explain how the resolution was verified.
-
-```text
-Add verification commands or expected output here
-```
-
-# 🛡️ Prevention
-
-Describe any recommendations that could prevent the problem from recurring.
-
-# 🔗 Related Notes
-
-- [[]]
-
-# 📌 Notes
-
-- 
+<!-- Link existing commands, concepts and guides; cite authoritative documentation without customer data or credentials. -->
